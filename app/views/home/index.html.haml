@@ -1,0 +1,8 @@
+%center
+  %h1 Welcome to Land Party Game Picker
+  - if user_signed_in?
+    %h2 You can add games or events below.
+  - else
+    %h2 You must login or sign up to use this system
+  %p.notice= notice
+  %p.alert= alert

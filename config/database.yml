@@ -1,0 +1,15 @@
+development:
+  adapter: postgresql
+  database: game_picker_development
+  encoding: utf8
+  username: dev
+  password: hipass
+  host: 127.0.0.1
+
+test: &TEST
+  adapter: postgresql
+  database: game_picker_test
+  encoding: utf8
+  username: dev
+  password: hipass
+  host: 127.0.0.1
