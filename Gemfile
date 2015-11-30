@@ -37,7 +37,7 @@ gem 'devise'
 gem 'devise_invitable', '~> 1.3.4'
 gem "nifty-generators", :group => :development
 gem "paperclip"
-gem 'aws-sdk'
+gem 'aws-sdk', '< 2.0'
 gem 'paper_trail', '~> 3.0.5'
 gem 'newrelic_rpm'
 gem 'simple_form'
@@ -75,7 +75,3 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
 end
-
-
-
-

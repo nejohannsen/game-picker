@@ -1,0 +1,7 @@
+%h1= @game.title
+%p= @game.description
+%div= image_tag @game.image
+%table
+  %tr
+    %td= "COOP Player Limit: #{@game.num_of_coop_players}"
+    %td= "COOP Player Limit: #{@game.num_of_vs_players}"

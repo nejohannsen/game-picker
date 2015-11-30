@@ -1,0 +1,19 @@
+= form_for @game do |f|
+  =# f.error_messages
+  %p
+    = f.label :title
+    = f.text_field :title
+  %p
+    = f.label :description
+    = f.text_area :description
+  %p
+    = f.label :num_of_coop_players
+    = f.text_field :num_of_coop_players
+  %p
+    = f.label :num_of_vs_players
+    = f.text_field :num_of_vs_players
+  %p
+    =# f.label :image
+    =# f.file_field :image
+  %p
+    = f.submit

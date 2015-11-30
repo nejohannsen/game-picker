@@ -1,0 +1,16 @@
+%h1 Games
+
+%table
+  %tr
+    %th Title
+    %th # of Coop
+    %th # of VS
+    %th Actions
+  - @games.each do |game|
+    %td= game.title
+    %td= game.num_of_coop_players
+    %td= game.num_of_vs_players
+    %td
+      = link_to 'Show', game_path(game)
+      = " | "
+      = link_to 'Edit', edit_game_path(game)
